@@ -21,7 +21,14 @@ unsigned int _strspn(char *s, char *accept)
 			{
 				value++;
 				check = 1;
+				break;
 			}
 		}
+		if (check == 0)
+		{
+			break;
+		}
+
 	}
+	return (value);
 }
