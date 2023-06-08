@@ -26,12 +26,11 @@ int check_palindrome(char *start, char *end)
 {
 	if (start >= end)
 		return (1); /*Base case: All characters have been checked*/
-    
-    if (*start != *end)
+
+	if (*start != *end)
 		return (0); /*Characters do not match, not a palindrome*/
-    
-	return
-		check_palindrome(start + 1, end - 1); 
+
+	return (check_palindrome(start + 1, end - 1));
 }
 
 
