@@ -18,11 +18,11 @@ int wildcmp(char *s1, char *s2)
 
 	/* Check if current characters match or if s2 is a wildcard */
 	if (*s1 == *s2 || *s2 == '*')
-		return (wildcmp(s1 + 1 , s2 + 1));
+		return (wildcmp(s1 + 1, s2 + 1));
 
 	/* Check if s2 is a wildcard and skip a character in s1 */
 	if (*s2 == '*')
-		if (wildcmp(s1 , s2 + 1))
+		if (wildcmp(s1, s2 + 1))
 			return (1);
 
 	/* Check if s1 still has characters and skip a character in s2 */
