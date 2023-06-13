@@ -15,6 +15,9 @@ char *_strdup(char *str)
 	int i;
 	/* get length of string*/
 	int str_len;
+	
+	if (str == NULL)
+		return (NULL);
 
 	for (str_len = 0; str[str_len] != '\0';)
 		str_len++;
@@ -22,7 +25,7 @@ char *_strdup(char *str)
 	/* Allocate memory to *ptr_str */
 	ptr_str = malloc(str_len * sizeof(char) + 1);
 
-	if (ptr_str == NULL || str == NULL)
+	if (ptr_str == NULL)
 		return (NULL);
 
 	/*copy text to allocated memory*/
