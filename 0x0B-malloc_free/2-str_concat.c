@@ -1,7 +1,12 @@
 #include "main.h"
 #include <stdlib.h>
 
-
+/**
+ * str_concat - Main Entry
+ * @s1: input
+ * @s2: input
+ * Return: 0
+ */
 
 char *str_concat(char *s1, char *s2)
 {
@@ -9,9 +14,9 @@ char *str_concat(char *s1, char *s2)
 	int x, y;
 
 	if (s1 == NULL)
-		s1 = " ";
+		s1 = "";
 	if (s2 == NULL)
-		s2 = " ";
+		s2 = "";
 
 	/* getting length of s1 and s2*/
 	x = y = 0;
