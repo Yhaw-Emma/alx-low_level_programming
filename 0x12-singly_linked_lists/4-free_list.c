@@ -1,5 +1,5 @@
 #include "lists.h"
-
+#include <stdlib.h>
 /**
  * free_list - Frees a linked list.
  * @head: A pointer to the head node of the list.
